@@ -168,3 +168,17 @@ module.exports = (app)=>{
        1. Get id from function
        2. Send to API to delete
        3. updateList after delete
+
+3. Check box boolean 
+   1. <h3>Open?: {store.isOpen ? "true" : "false"}</h3>
+const [isOpen, setIsOpen] = useState(false)
+<div>
+          <label>Is Open</label>
+          <input type="checkbox" name="isOpen" checked={isOpen}
+            onChange={e => setIsOpen(e.target.checked)} />
+        </div>
+isOpen: {
+            type: Boolean,
+            default: false
+        }
+    }
