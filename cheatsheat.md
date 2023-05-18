@@ -52,6 +52,12 @@ app.listen(8000, () => console.log("Listening to port 8000"))
     .then(() => console.log("Established a connection to the database"))
     .catch(err => console.log("Something went wrong when connecting to the database", err));
 
+5. and create a safe environment
+** DO NOT forget to create .gitignore in the project folder
+in .gitignore (since we're making it from scratch) type in 
+    .env
+    node_modules
+
 1.  add: "serve": "nodemon server.js" to package.json
 2.  run: npm run serve // make sure "Listening to port 8000" "Established a connection to the database"
 3.  Define models
